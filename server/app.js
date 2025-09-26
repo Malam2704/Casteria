@@ -23,6 +23,11 @@ app.get('/character/5', (req, res) => {
     res.sendFile(process.cwd() + "/public/character/sparrow.html")
 })
 
+// 404 handler (MUST be last)
+app.use((req, res) => {
+  res.status(404).sendFile(process.cwd() + "/public/error.html")
+});
+
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`)
 })
