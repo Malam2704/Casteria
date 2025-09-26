@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     classTags.forEach(tag => {
         const value = tag.textContent.trim().toLowerCase();
         // console.log(value)
-        switch(value){
+        switch (value) {
             case "support":
                 tag.style.backgroundColor = "#4cafef"; // blue
                 tag.style.color = "white";
@@ -34,5 +34,37 @@ document.addEventListener("DOMContentLoaded", () => {
                 tag.style.color = "white";
                 break;
         }
-     });
+    });
+
+    const cards = document.querySelectorAll(".character-card");
+
+    cards.forEach(card => {
+        card.addEventListener("click", () => {
+            const titleEl = card.querySelector("h3");
+            if (!titleEl) return;
+
+            const name = titleEl.textContent.trim().toLowerCase();
+
+            switch (name) {
+                case "max the hero":
+                    window.location.href = "/character/1";
+                    break;
+                case "shara the ranger":
+                    window.location.href = "/character/2";
+                    break;
+                case "marden the dwarf":
+                    window.location.href = "/character/3";
+                    break;
+                case "casitra the wise":
+                    window.location.href = "/character/4";
+                    break;
+                case "sparrow the root":
+                    window.location.href = "/character/5";
+                    break;
+                default:
+                    window.location.href = "/character/unknown"; // fallback route
+                    break;
+            }
+        });
+    });
 });
