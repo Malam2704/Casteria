@@ -3,27 +3,30 @@ console.log(pageTitle);
 console.log(document.getElementsByClassName('page-wrapper')[0])
 
 document.addEventListener("DOMContentLoaded", () => {
-    switch(pageTitle){
+    switch (pageTitle) {
         case "Max The Hero":
-            document.getElementsByClassName("page-wrapper")[0].style.background = 
-        "linear-gradient(135deg, #1e1e2f, #e74c3c)";
+            document.getElementsByClassName("page-wrapper")[0].style.background =
+                "linear-gradient(135deg, #1e1e2f, #e74c3c)";
+            break;
         case "Shara The Ranger":
-            document.getElementsByClassName("page-wrapper")[0].style.background = 
-        "linear-gradient(135deg, #1e1e2f, #264e2dff)";
+            document.getElementsByClassName("page-wrapper")[0].style.background =
+                "linear-gradient(135deg, #1e1e2f, #264e2dff)";
+            break;
         case "Marden The Dwarf":
-            document.getElementsByClassName("page-wrapper")[0].style.background = 
-        "linear-gradient(135deg, #1e1e2f, #4cafef)";
+            document.getElementsByClassName("page-wrapper")[0].style.background =
+                "linear-gradient(135deg, #1e1e2f, #4cafef)";
+            break;
         case "Casitra The Wise":
-            document.getElementsByClassName("page-wrapper")[0].style.background = 
-        "linear-gradient(135deg, #1e1e2f, #3498db)";
+            document.getElementsByClassName("page-wrapper")[0].style.background =
+                "linear-gradient(135deg, #1e1e2f, #3498db)";
             break;
         case "Sparrow The Root":
-            document.getElementsByClassName("page-wrapper")[0].style.background = 
-        "linear-gradient(135deg, #1e1e2f, #8e44ad)";
+            document.getElementsByClassName("page-wrapper")[0].style.background =
+                "linear-gradient(135deg, #1e1e2f, #8e44ad)";
             break;
         default:
-            document.getElementsByClassName("page-wrapper")[0].style.background = 
-        "linear-gradient(135deg, #1e1e2f, #555)";
+            document.getElementsByClassName("page-wrapper")[0].style.background =
+                "linear-gradient(135deg, #1e1e2f, #555)";
             break;
     }
 });
