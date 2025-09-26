@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    text-align: center;
+}
+
+#backdrop {
+    background-image: url("images/backdrop.png");
+    background-size: cover;
+    height: 100vh;
+
+    display: flex;
+    /* stack items vertically */
+    flex-direction: column;
+    /* justify-content: center; */
+    /* center horizontally */
+    align-items: center;
+    /* center text inside */
+    text-align: center;
+
+    padding-top: 5em;
+    color: rgb(177, 109, 8);
+}
